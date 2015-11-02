@@ -22,9 +22,10 @@
     'description': """
 Website Forum - Tag List
 ========================
- * Show a list of available tags under the tag autocomplete field when creating a new forum post
+ * Show a list of available tags below the tag autocomplete field when posting a new question
 """,
     'data': [
-        'views/forum_post.xml'
+        'views/assets.xml',
+        'views/forum_post.xml',
     ]
 }
