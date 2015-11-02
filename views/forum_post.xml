@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+  <data>
+
+    <template id="ask_question_inherit" inherit_id="website_forum.ask_question">
+      <xpath expr="//input[@name='question_tags']" position="after">
+        <h4>Available tags:</h4>
+        <t t-foreach="forum.tag_ids" t-as="tag">
+          <span t-attf-class="badge" t-field="tag.name"
+                  style="margin-right: 4px;"/>
+          <!-- </a>-->
+        </t>
+        <br/>
+
+      </xpath>
+    </template>
+  </data>
+</openerp>
